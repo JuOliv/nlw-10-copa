@@ -120,6 +120,16 @@ transform: scale(1.1);
     opacity: 0;
     animation: appear .2s forwards;
 }
+
+footer{
+    font-family: 'Roboto', sans-serif;
+    color: #e1e1e6;
+    text-align: right;
+    padding-top: 25px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+}
+
 @keyframes appear {
 0% {
     transform: translateY(-50px);
