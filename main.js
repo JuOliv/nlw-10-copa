@@ -87,10 +87,10 @@ document.querySelector("#cards").innerHTML =
     createCard(
         `28/11`,
         `segunda`,
-        createGame(`cameroon`, `07:00`, `serbia`) +
-            createGame(`south korea`, `10:00`, `ghana`) +
-            createGame(`brazil`, `13:00`, `switzerland`) +
-            createGame(`portugal`, `16:00`, `uruguay`)
+        createGame(`cameroon`, `3 X 3`, `serbia`) +
+            createGame(`south korea`, `2 X 3`, `ghana`) +
+            createGame(`brazil`, `1 X 0`, `switzerland`) +
+            createGame(`portugal`, `2 x 0`, `uruguay`)
     ) +
     createCard(
         `29/11`,
