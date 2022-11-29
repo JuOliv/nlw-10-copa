@@ -9,18 +9,6 @@
     --card-bg-color: #191a1d;
     --body-bg-color: #02020e;
 }
-body.blue {
-    --card-title-border-color: #338af3;
-    --card-color-primary: #338af3;
-    --card-bg-color: #202024;
-    --body-bg-color: #091030;
-}
-body.green {
-    --card-title-border-color: #047c3f;
-    --card-color-primary: #047c3f;
-    --card-bg-color: #1A1F1B;
-    --body-bg-color: #121214;
-}
 ul{
     list-style: none;
 }
@@ -37,13 +25,13 @@ ul{
 */
 body {
     background-color: var(--body-bg-color);
-    background-image: url(./assets/bg.svg);
+    background-image: url(../assets/bg.svg);
     background-position: top center;
 }
 body * {
     font-family: 'Roboto', sans-serif;
 }
-#app {
+#paginaGrupos {
     width: fit-content;
     margin: auto;
     padding-top: 52px;
@@ -54,7 +42,7 @@ header {
     text-align: center;
 }
 
-#cards {
+#grupos {
     display: flex;
     flex-direction: column;
     gap: 32px;
@@ -149,5 +137,4 @@ footer{
         flex-direction: row;
         flex-wrap: wrap;
     }
-
 }
