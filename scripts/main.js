@@ -27,6 +27,46 @@ function createCard(data, semana, jogos){
     `
 }
 
+document.querySelector("#oitavas").innerHTML = `
+    
+    ${createCard(
+        "03/12",
+        "sábado",
+        createGame("netherlands", "3 X 1", "united states") +
+            createGame("argentina", "2 X 1", "australia")
+    )} 
+    ${createCard(
+        "04/12",
+        "domingo",
+        createGame("france", "12:00", "poland") +
+            createGame("england", "16:00", "senegal")
+    )} 
+    ${createCard(
+        "05/12",
+        "segunda",
+        createGame("japan", "12:00", "croatia") +
+            createGame("brazil", "16:00", "south korea")
+    )} 
+    ${createCard(
+        "06/12",
+        "terça",
+        createGame("morocco", "12:00", "spain") +
+            createGame("portugal", "16:00", "switzerland")
+    )} 
+`
+document.querySelector("#quartas").innerHTML = `
+    
+    ${createCard(
+        "03/12",
+        "sexta",
+            createGame("netherlands", "16:00", "argentina")
+    )} 
+    ${createCard(
+        "04/12",
+        "Sábado",
+    )} 
+`
+
 document.querySelector("#cards").innerHTML =
     createCard("20/11", "domingo", createGame("qatar", "0 X 2", "ecuador")) +
     createCard(
@@ -119,8 +159,8 @@ document.querySelector("#cards").innerHTML =
     createCard(
         `02/12`,
         `sexta`,
-        createGame(`ghana`, `12:00`, `uruguay`) +
-            createGame(`south korea`, `12:00`, `portugal`) +
-            createGame(`serbia`, `16:00`, `switzerland`) +
-            createGame(`cameroon`, `16:00`, `brazil`)
+        createGame(`ghana`, `0 X 2`, `uruguay`) +
+            createGame(`south korea`, `2 X 1`, `portugal`) +
+            createGame(`serbia`, `2 X 3`, `switzerland`) +
+            createGame(`cameroon`, `1 X 0`, `brazil`)
     ) 
