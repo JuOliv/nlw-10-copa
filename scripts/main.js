@@ -1,5 +1,32 @@
 function createGame(jogador1, hora, jogador2){
-    return `
+    var resp = `
+        <li>
+    `
+    if (!jogador1){
+        resp = resp + `<p>A Definir</p>`
+    }
+    else{
+        resp =
+            resp +
+            `<img
+                src="./assets/icon=${jogador1}.svg"
+                alt="Bandeira da ${jogador1}"
+            />`
+    }
+    resp = resp + `<strong>${hora}</strong>`
+    if (!jogador2) {
+        resp = resp + `<p>A Definir</p>`
+    } else {
+        resp =
+            resp +
+            `<img
+                src="./assets/icon=${jogador2}.svg"
+                alt="Bandeira da ${jogador2}"
+            />`
+    }
+    resp = resp + `</li>`
+    return resp
+    /* return `
         <li>
             <img
                 src="./assets/icon=${jogador1}.svg"
@@ -11,7 +38,7 @@ function createGame(jogador1, hora, jogador2){
                 alt="Bandeira de ${jogador2}"
             />
         </li>
-    `
+    ` */
 }
 let delay = -0.4;
 
@@ -59,11 +86,14 @@ document.querySelector("#quartas").innerHTML = `
     ${createCard(
         "03/12",
         "sexta",
+        createGame("", "12:00", "") +
             createGame("netherlands", "16:00", "argentina")
     )} 
     ${createCard(
         "04/12",
         "Sábado",
+        createGame("", "12:00", "") +
+         createGame("", "16:00", "")
     )} 
 `
 

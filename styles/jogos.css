@@ -61,6 +61,10 @@ h1 {
     justify-content: center;
 }
 
+p {
+    color: #e1e1e6;
+}
+
 #cards {
     display: flex;
     flex-direction: column;
