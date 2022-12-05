@@ -40,10 +40,10 @@ function createGame(jogador1, hora, jogador2){
         </li>
     ` */
 }
-let delay = -0.4;
+let delay = -0.1;
 
 function createCard(data, semana, jogos){
-    delay = delay +0.4;
+    delay = delay +0.1;
     return `
         <div class="card" style="animation-delay: ${delay}s">
             <h2>${data} <span>${semana}</span></h2>
@@ -65,8 +65,8 @@ document.querySelector("#oitavas").innerHTML = `
     ${createCard(
         "04/12",
         "domingo",
-        createGame("france", "12:00", "poland") +
-            createGame("england", "16:00", "senegal")
+        createGame("france", "3 X 1", "poland") +
+            createGame("england", "3 X 0", "senegal")
     )} 
     ${createCard(
         "05/12",
@@ -93,7 +93,7 @@ document.querySelector("#quartas").innerHTML = `
         "04/12",
         "Sábado",
         createGame("", "12:00", "") +
-         createGame("", "16:00", "")
+         createGame("france", "16:00", "england")
     )} 
 `
 
