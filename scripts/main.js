@@ -1,4 +1,4 @@
-function createGame(jogador1, hora, jogador2){
+function createGame(jogador1, hora, jogador2, penaltis){
     var resp = `
         <li>
     `
@@ -13,7 +13,12 @@ function createGame(jogador1, hora, jogador2){
                 alt="Bandeira da ${jogador1}"
             />`
     }
+    resp = resp + `<div class="horaPlacar">`
+    if (penaltis){
+        resp = resp + `<p> P ${penaltis}</p>`
+    }
     resp = resp + `<strong>${hora}</strong>`
+    resp = resp + `</div>`
     if (!jogador2) {
         resp = resp + `<p>A Definir</p>`
     } else {
@@ -71,14 +76,14 @@ document.querySelector("#oitavas").innerHTML = `
     ${createCard(
         "05/12",
         "segunda",
-        createGame("japan", "1 (1) X 1 (3)", "croatia") +
+        createGame("japan", "1 X 1", "croatia", "(1) X (3)") +
             createGame("brazil", "4 X 1", "south korea")
     )} 
     ${createCard(
         "06/12",
         "terça",
-        createGame("morocco", "12:00", "spain") +
-            createGame("portugal", "16:00", "switzerland")
+        createGame("morocco", "0 X 0", "spain", "(3) X (0)") +
+            createGame("portugal", "6 X 1", "switzerland")
     )} 
 `
 document.querySelector("#quartas").innerHTML = `
@@ -92,7 +97,7 @@ document.querySelector("#quartas").innerHTML = `
     ${createCard(
         "04/12",
         "Sábado",
-        createGame("", "12:00", "") +
+        createGame("morocco", "12:00", "portugal") +
          createGame("france", "16:00", "england")
     )} 
 `

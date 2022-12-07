@@ -153,12 +153,22 @@ p {
     padding-top: 24px;
     border-top: 1px solid #323238;
 }
+
+.card ul li div p {
+    display: block;
+    font-size: 20px;
+    line-height: 125%;
+    color: #e1e1e6;
+} 
+
 .card ul li strong {
+    display: block;
     font-weight: 900;
     font-size: 36px;
     line-height: 125%;
     color: #e1e1e6;
 }
+
 .card h2:hover,  
 .card ul li strong:hover,
 .card ul li img:hover {
