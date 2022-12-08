@@ -50,8 +50,9 @@ body * {
 }
 
 header { 
-    margin-bottom: 63px;
+    padding-bottom: 55px;
     text-align: center;
+    border-bottom: 1px solid #323238;
 }
 
 h1 { 
@@ -100,6 +101,7 @@ p {
 #terceiro {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 32px;
     padding-bottom: 32px;
     border-bottom: 1px solid #323238;
@@ -108,6 +110,7 @@ p {
 #final {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 32px;
     padding-bottom: 32px;
     border-bottom: 1px solid #323238;
@@ -171,12 +174,14 @@ p {
 
 .card h2:hover,  
 .card ul li strong:hover,
+.card ul li p:hover,
 .card ul li img:hover {
 transform: scale(1.1);
 }
 
 .card h2,
 .card ul li strong,
+.card ul li p,
 .card ul li img{
     transition: transform 0.3;
 }
