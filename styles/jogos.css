@@ -121,6 +121,7 @@ p {
     text-align: center;
     background:var(--card-bg-color);
     border-bottom: 2px solid var(--card-color-primary);
+    width: fit-content;
     border-radius: 6px;
 }
 .card h2 {
@@ -160,7 +161,6 @@ p {
 .card ul li div p {
     display: block;
     font-size: 20px;
-    line-height: 125%;
     color: #e1e1e6;
 } 
 
@@ -220,19 +220,23 @@ footer{
         max-width: 670px;
         flex-direction: row;
         flex-wrap: wrap;
-    }#quartas{
+    }
+    #quartas{
         max-width: 670px;
         flex-direction: row;
         flex-wrap: wrap;
-    }#semi{
+    }
+    #semi{
         max-width: 670px;
         flex-direction: row;
         flex-wrap: wrap;
-    }#terceiro{
+    }
+    #terceiro{
         max-width: 670px;
         flex-direction: row;
         flex-wrap: wrap;
-    }#final{
+    }
+    #final{
         max-width: 670px;
         flex-direction: row;
         flex-wrap: wrap;

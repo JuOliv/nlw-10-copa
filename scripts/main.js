@@ -91,8 +91,8 @@ document.querySelector("#quartas").innerHTML = `
     ${createCard(
         "03/12",
         "sexta",
-        createGame("brazil", "12:00", "croatia") +
-            createGame("netherlands", "16:00", "argentina")
+        createGame("brazil", "1 X 1", "croatia", "(2) X (4)") +
+            createGame("netherlands", "1 X 1", "argentina", "(3) X (4)")
     )} 
     ${createCard(
         "04/12",
@@ -106,7 +106,7 @@ document.querySelector("#semi").innerHTML = `
     ${createCard(
         "13/12",
         "terça",
-            createGame("", "16:00", "")
+            createGame("argentina", "16:00", "croatia")
     )} 
     ${createCard(
         "14/12",
