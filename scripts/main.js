@@ -97,8 +97,8 @@ document.querySelector("#quartas").innerHTML = `
     ${createCard(
         "04/12",
         "Sábado",
-        createGame("morocco", "12:00", "portugal") +
-         createGame("france", "16:00", "england")
+        createGame("morocco", "1 X 0", "portugal") +
+         createGame("france", "2 X 1", "england")
     )} 
 `
 
@@ -106,21 +106,21 @@ document.querySelector("#semi").innerHTML = `
     ${createCard(
         "13/12",
         "terça",
-            createGame("argentina", "16:00", "croatia")
+            createGame("argentina", "3 X 0", "croatia")
     )} 
     ${createCard(
         "14/12",
         "quarta",
-            createGame("", "16:00", "")
+            createGame("france", "16:00", "morocco")
     )} 
 `
 
 document.querySelector("#terceiro").innerHTML = ` 
-    ${createCard("17/12", "sábado", createGame("", "12:00", ""))} 
+    ${createCard("17/12", "sábado", createGame("croatia", "12:00", ""))} 
 `
 
 document.querySelector("#final").innerHTML = ` 
-    ${createCard("18/12", "domingo", createGame("", "12:00", ""))} 
+    ${createCard("18/12", "domingo", createGame("argentina", "12:00", ""))} 
 `
 
 document.querySelector("#cards").innerHTML = ` 
