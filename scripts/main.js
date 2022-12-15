@@ -116,11 +116,11 @@ document.querySelector("#semi").innerHTML = `
 `
 
 document.querySelector("#terceiro").innerHTML = ` 
-    ${createCard("17/12", "sábado", createGame("croatia", "12:00", ""))} 
+    ${createCard("17/12", "sábado", createGame("croatia", "12:00", "morocco"))} 
 `
 
 document.querySelector("#final").innerHTML = ` 
-    ${createCard("18/12", "domingo", createGame("argentina", "12:00", ""))} 
+    ${createCard("18/12", "domingo", createGame("argentina", "12:00", "france"))} 
 `
 
 document.querySelector("#cards").innerHTML = ` 
